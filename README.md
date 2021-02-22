@@ -2,7 +2,7 @@
 Repositório para gerenciar projetos e aulas de Linguagens 1
 
 # Desenvolvedor:
-## Matheus Ha
+- Matheus Ha
 
 # Principais Linguagens:
 - Java
