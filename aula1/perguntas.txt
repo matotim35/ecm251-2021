@@ -1,0 +1,10 @@
+1. onde está instalado o jdk
+ C:\Program Files\Amazon Corretto\jdk11.0.10_9
+
+2. qual o caminho completo até o javac
+3. como compilamos um programa em linha de comando?
+4. como executamos esse programa?
+5. o que são variáveis de ambiente?
+6. qualquer um pode criar variáveis de ambiente?
+7. como criar uma variável de ambiente?
+8. o que é o JAVA_HOME
