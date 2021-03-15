@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Sistema {
     private boolean executarSistema;
     private Scanner scanner;
+    private Conta conta;
 
     public void executar(){
         int opcao;
@@ -21,6 +22,17 @@ public class Sistema {
                 System.out.println("Obrigado por ecolher o MauaBank");
                 this.executarSistema=false;
                 break;
+            case 1:
+                System.out.println("Saldo Atual: R$" + this.conta.getSaldo());
+                break;
+            case 2:
+                System.out.println("Qual quantia de dinheiro?");
+                double quantiaParaSacar= scanner.nextDouble();
+                if(this.conta.sacar(quantiaParaSacar)){
+                    System.out.println("Operação realzada com sucesso");
+                } else {
+                    System.out.println("Nao foi possivel realizar a operacao");
+                }
             default:
                 System.out.println("Essa funcionalidade ainda nao foi implementada");
 
@@ -30,6 +42,7 @@ public class Sistema {
     public Sistema() {
         this.scanner = new Scanner(System.in); //Deixa ele ler da entrada do sistema- teclado
         this.executarSistema = true;
+        this.conta = new Conta("Mario", 1945, 1234 )
     }
 
     private void exibirMenu() {
