@@ -1,9 +1,13 @@
 package ha.matheus;
 
 public class Cliente {
-    String nome;
-    String sobrenome;
-    String cpf;
+    private String nome;
+    private String sobrenome;
+    private String cpf;
+
+    public Cliente(String nome) {
+        this.nome = nome;
+    }
 
     @Override
     public String toString() {
