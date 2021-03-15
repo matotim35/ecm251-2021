@@ -33,6 +33,20 @@ public class Sistema {
                 } else {
                     System.out.println("Nao foi possivel realizar a operacao");
                 }
+            case 3:
+                System.out.println("Qual quantia de dinheiro?");
+                double quantiaParaDepositar= scanner.nextDouble();
+                this.conta.depositar(quantiaParaDepositar);
+                System.out.println("Opecao realizada com sucesso!");
+                break;
+            case 5:
+                System.out.println("Nome da conta: ");
+                String nome= scanner.next();
+                System.out.println("Valor da conta: ");
+                double valorDaConta = scanner.nextDouble();
+                System.out.println("juros da conta: ");
+                double jurosDaConta = scanner.nextDouble();
+                System.out.println("Informe");
             default:
                 System.out.println("Essa funcionalidade ainda nao foi implementada");
 
@@ -42,7 +56,7 @@ public class Sistema {
     public Sistema() {
         this.scanner = new Scanner(System.in); //Deixa ele ler da entrada do sistema- teclado
         this.executarSistema = true;
-        this.conta = new Conta("Mario", 1945, 1234 )
+        this.conta = new Conta("Mario", 1945, 1234 );
     }
 
     private void exibirMenu() {
