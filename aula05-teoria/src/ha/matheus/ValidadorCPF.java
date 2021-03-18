@@ -33,9 +33,6 @@ public class ValidadorCPF {
             return true;
 
 
-
-
-
         return true;
     }
     private static boolean validarDigito(int[] multiplicadores, String cpf){
