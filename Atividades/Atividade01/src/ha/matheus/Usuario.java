@@ -12,4 +12,8 @@ public class Usuario {
         this.senha= senha;
         this.cpf= senha;
     }
+
+    public String getNome(){
+        return nome;
+    }
 }

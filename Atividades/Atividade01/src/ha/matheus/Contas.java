@@ -3,11 +3,14 @@ package ha.matheus;
 public class Contas {
     private int idConta;
     private double saldo;
-    private int TotalContas=0;
+    private int TotalContas;
+    private Usuario usuario;
 
-    public Contas(int idConta, double saldoInicial){
+    public Contas(int idConta, Usuario usuario, double saldoInicial){
         this.idConta= idConta;
+        this.usuario= usuario;
         this.saldo= saldoInicial;
+
     }
 
     public void depositar(double valor){
@@ -31,5 +34,7 @@ public class Contas {
         return saldo;
     }
 
-
+    public String getUsuarioNome(){
+        return usuario.getNome();
+    }
 }
