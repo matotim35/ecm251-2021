@@ -1,4 +1,5 @@
 package ha.matheus;
+//O codigo foi teve muita inspiracao da nossa aula 05. O codigo com classe Sistema, Conta, etc.
 
 public class Main {
 
