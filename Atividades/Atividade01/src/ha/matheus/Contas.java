@@ -6,7 +6,7 @@ public class Contas {
     private int TotalContas=0;
 
     public Conta(int idConta, double saldoInicial){
-        this.idConta= TotalContas + 1;
+        this.idConta= idConta;
         this.saldo= saldoInicial;
     }
 

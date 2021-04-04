@@ -8,6 +8,6 @@ public class Main {
         Usuario u2= new Usuario("One For All", "One.for.all@gmail.com","oneforall123", "38629826522");
         Usuario u3= new Usuario("Bakugo", "Bakugo@gmail.com","bakugo123", "43129816523");
 
-
+        Contas c1= new Contas()
     }
 }
