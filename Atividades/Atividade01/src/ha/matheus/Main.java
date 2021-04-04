@@ -8,6 +8,11 @@ public class Main {
         Usuario u2= new Usuario("One For All", "One.for.all@gmail.com","oneforall123", "38629826522");
         Usuario u3= new Usuario("Bakugo", "Bakugo@gmail.com","bakugo123", "43129816523");
 
-        Contas c1= new Contas()
+        Contas c1= new Contas(1, 1000);
+        Contas c2= new Contas(2, 250);
+        Contas c3= new Contas(3, 3000);
+
+        System.out.println(c1.getIdConta());
+
     }
 }

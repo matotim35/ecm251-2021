@@ -5,7 +5,7 @@ public class Contas {
     private double saldo;
     private int TotalContas=0;
 
-    public Conta(int idConta, double saldoInicial){
+    public Contas(int idConta, double saldoInicial){
         this.idConta= idConta;
         this.saldo= saldoInicial;
     }
@@ -14,7 +14,7 @@ public class Contas {
         this.saldo += valor;
     }
 
-    public boolean(double valor){
+    public boolean sacar(double valor){
         if(valor <= this.saldo){
             this.saldo -= valor;
             return true;
