@@ -6,28 +6,31 @@ import ha.matheus.interfaces.PostarMensagem;
 
 public abstract class Member implements Apresentacao, PostarMensagem {
 
-    private String usuario;
-    private String email;
-    protected MemberRole role;
+    public static String usuario;
+    public static String email;
+    public static MemberRole role;
     protected String assinaturaRegular;
     protected String assinaturaExtra;
+
 
     public Member(String usuario, String email){
         this.usuario = usuario;
         this.email = email;
     }
 
-    public String getUsuario() {
+    public static String getUsuario() {
         return usuario;
     }
 
-    public String getEmail() {
+    public static String getEmail() {
         return email;
     }
 
-    public MemberRole getRole() {
+    public static MemberRole getRole() {
         return role;
     }
+
+
 
     @Override
     public void apresentarMembros() {

@@ -4,6 +4,7 @@ import ha.matheus.enums.SystemTime;
 import ha.matheus.interfaces.Apresentacao;
 import ha.matheus.models.*;
 
+import java.io.FileNotFoundException;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -30,7 +31,7 @@ public abstract class Menu implements Apresentacao {
     }
 
 
-    public static void run(){
+    public static void run() throws FileNotFoundException {
         boolean controlador = true;
         int opcao;
         while(controlador){
@@ -75,6 +76,8 @@ public abstract class Menu implements Apresentacao {
                         default:
                             break;
                     }
+                    Arquivar arquivar= new Arquivar();
+                    arquivar.arquivar(memberList);
 
                 case 2:
                     //Ver membros
