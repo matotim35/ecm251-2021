@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.jkcclemens:khttp:-0.1.0-g39f76b4-30">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/jkcclemens/khttp/-0.1.0-g39f76b4-30/khttp--0.1.0-g39f76b4-30.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/jkcclemens/khttp/-0.1.0-g39f76b4-30/khttp--0.1.0-g39f76b4-30-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/jkcclemens/khttp/-0.1.0-g39f76b4-30/khttp--0.1.0-g39f76b4-30-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
